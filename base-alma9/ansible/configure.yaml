@@ -1,0 +1,7 @@
+- name: configure
+  hosts: default
+  gather_facts: true
+  tasks:
+    - name: print os family
+      ansible.builtin.debug:
+        msg: "{{ ansible_os_family }}"
