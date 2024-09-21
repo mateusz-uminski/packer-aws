@@ -1,0 +1,9 @@
+.terraform/
+*.tfstate
+
+ansible_collections/
+config.yaml
+
+.pytest_cache/
+__pycache__/
+venv/
