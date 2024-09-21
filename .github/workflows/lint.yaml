@@ -18,9 +18,6 @@ jobs:
       python_version: 3.11
       yamllint_version: 1.33.0
 
-  ansible-lint:
-    uses: mateusz-uminski/github-actions/.github/workflows/ansible-lint.yaml@main
-
   python-lint:
     uses: mateusz-uminski/github-actions/.github/workflows/python-lint.yaml@main
     with:
