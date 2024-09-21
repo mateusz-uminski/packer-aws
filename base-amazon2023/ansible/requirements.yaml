@@ -1,0 +1,7 @@
+collections:
+  - source: https://github.com/mateusz-uminski/ansible-collections.git#/admin
+    version: admin-v0.1.0
+    type: git
+  - source: https://github.com/mateusz-uminski/ansible-collections.git#/docker
+    version: docker-v0.1.0
+    type: git

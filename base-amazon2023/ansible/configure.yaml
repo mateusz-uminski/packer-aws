@@ -1,0 +1,11 @@
+- name: configure
+  hosts: all
+  gather_facts: true
+  tasks:
+    - name: install admin tools
+      import_role:
+        name: infra.admin.tools
+
+    - name: install docker
+      ansible.builtin.import_role:
+        name: infra.docker.install
