@@ -1,0 +1,16 @@
+- name: configure
+  hosts: all
+  gather_facts: true
+  tasks:
+    - name: update cache
+      apt:
+        update_cache: true
+      become: true
+
+    - name: install admin tools
+      import_role:
+        name: infra.admin.tools
+
+    - name: install docker
+      ansible.builtin.import_role:
+        name: infra.docker.install
