@@ -1,0 +1,6 @@
+ansible==8.6.0
+ansible-base==2.10.17
+ansible-compat==4.1.11
+ansible-core==2.15.6
+ansible-lint==24.2.2
+yamllint==1.35.1
