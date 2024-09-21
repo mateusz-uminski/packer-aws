@@ -60,5 +60,6 @@ export VAULT_TOKEN='<token>'
 export AWS_PROFILE=<aws_profile>
 
 cd $(git rev-parse --show-toplevel)
+source venv/bin/activate
 packer build -var-file=base-debian12/pkrvars/sandbox.pkrvars.hcl .
 ```
